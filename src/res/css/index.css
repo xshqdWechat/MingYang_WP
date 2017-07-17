@@ -219,73 +219,120 @@ a {
         .mywp-header .site-menu .exitSystem a span {
           width: 0.57rem; }
 
-.mywp-main .sub-nav {
-  float: left;
-  background-image: url("../images/subbg.png");
-  -webkit-background-size: 100% auto;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  width: 2.74rem;
-  height: 7.82rem;
-  margin-top: 0.8rem;
-  margin-right: 0.8rem;
-  position: relative;
-  padding: 1.4rem 0 0 0.15rem; }
-  .mywp-main .sub-nav a {
-    padding: 0 0.22rem 0 0.28rem;
-    background-image: url("../images/subnav.png");
+.mywp-main {
+  display: flex; }
+  .mywp-main .sub-nav {
+    background-image: url("../images/subbg.png");
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    width: 2.4rem;
-    height: 1rem;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.24rem;
-    color: #ffffff;
-    text-align: right;
-    line-height: 1rem;
-    text-shadow: #009bff 0 0 4px;
-    margin-bottom: 0.3rem; }
-    .mywp-main .sub-nav a:last-child {
-      margin-bottom: 0; }
-    .mywp-main .sub-nav a:hover, .mywp-main .sub-nav a.active {
-      background-image: url("../images/subnavh.png");
+    width: 2.74rem;
+    height: 7.82rem;
+    margin-top: 0.8rem;
+    margin-right: 0.8rem;
+    position: relative;
+    padding: 1.4rem 0 0 0.15rem; }
+    .mywp-main .sub-nav a {
+      padding: 0 0.22rem 0 0.28rem;
+      background-image: url("../images/subnav.png");
+      -webkit-background-size: 100% auto;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      width: 2.4rem;
+      height: 1rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.24rem;
+      color: #ffffff;
+      text-align: right;
+      line-height: 1rem;
+      text-shadow: #009bff 0 0 4px;
+      margin-bottom: 0.3rem; }
+      .mywp-main .sub-nav a:last-child {
+        margin-bottom: 0; }
+      .mywp-main .sub-nav a:hover, .mywp-main .sub-nav a.active {
+        background-image: url("../images/subnavh.png");
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto;
+        background-repeat: no-repeat; }
+      .mywp-main .sub-nav a span.icon-ssgl {
+        width: 0.7rem; }
+      .mywp-main .sub-nav a span.icon-ycgl {
+        width: 0.61rem; }
+      .mywp-main .sub-nav a span.icon-ljnh {
+        width: 0.48rem; }
+      .mywp-main .sub-nav a span.icon-jnxy {
+        width: 0.5rem; }
+    .mywp-main .sub-nav .sub-nav-toggle {
+      position: absolute;
+      right: -0.43rem;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      display: block;
+      background-image: url("../images/subnav_toggle.png");
+      -webkit-background-size: 100% auto;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      width: 0.43rem;
+      height: 3.55rem;
+      cursor: pointer; }
+  .mywp-main .container {
+    flex: 1;
+    margin-top: 0.56rem;
+    margin-right: 0.7rem;
+    background-image: url("../images/containerbg.png");
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 8.41rem; }
+  .mywp-main .mywp-cf {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center; }
+    .mywp-main .mywp-cf img {
+      width: 12.34rem;
+      height: 100%; }
+  .mywp-main .mywp-cfxt {
+    width: 100%;
+    padding: 0.5rem 1rem; }
+    .mywp-main .mywp-cfxt .cfxtImg {
+      position: relative;
+      margin: 0 auto;
+      width: 11.43rem;
+      height: 7.16rem;
+      background-image: url("../images/cfxt.png");
       -webkit-background-size: 100% auto;
       background-size: 100% auto;
       background-repeat: no-repeat; }
-    .mywp-main .sub-nav a span.icon-ssgl {
-      width: 0.7rem; }
-    .mywp-main .sub-nav a span.icon-ycgl {
-      width: 0.61rem; }
-    .mywp-main .sub-nav a span.icon-ljnh {
-      width: 0.48rem; }
-    .mywp-main .sub-nav a span.icon-jnxy {
-      width: 0.5rem; }
-  .mywp-main .sub-nav .sub-nav-toggle {
-    position: absolute;
-    right: -0.43rem;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+  .mywp-main span.dot {
+    width: 0.18rem;
+    height: 0.18rem;
     display: block;
-    background-image: url("../images/subnav_toggle.png");
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    width: 0.43rem;
-    height: 3.55rem;
-    cursor: pointer; }
-.mywp-main .container {
-  float: left;
-  margin-top: 0.56rem;
-  background-image: url("../images/containerbg.png");
-  -webkit-background-size: 100% auto;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-  width: 14.92rem;
-  height: 8.41rem; }
+    border-radius: 50%;
+    border: 1px solid #45fff9;
+    position: relative; }
+    .mywp-main span.dot:before {
+      content: '';
+      display: block;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      background-color: #45fff9;
+      opacity: .5; }
+    .mywp-main span.dot:after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      content: '';
+      display: block;
+      border-radius: 50%;
+      width: 60%;
+      height: 60%;
+      background-color: #45fff9; }
 
 /*# sourceMappingURL=index.css.map */

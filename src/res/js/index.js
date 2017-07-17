@@ -1,4 +1,4 @@
-(function ($, window) {
+(function ($, mywp) {
     mywp.setAdaption(19.2);
 
     $(function () {
@@ -17,6 +17,9 @@
         }
         $('#subToggle').on('click', subToggleShow());
 
+        /*信息点生成*/
+
+
     })
 
-})(jQuery, window)
+})(jQuery, mywp)

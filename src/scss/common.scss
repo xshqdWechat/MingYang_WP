@@ -1,0 +1,75 @@
+@charset "utf-8";
+/*global*/
+* {
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+  font-size: 12px;
+}
+
+body, ul, li, table, tr, td, img, button, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix{
+  &:after,&:before{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+$url: '../images/';
+$url-icon: '../images/icon/';
+$id: '.mywp-';
+$baseFont: 100px;
+
+/*color*/
+$bg: #020a11;
+
+/*fontColor*/
+$nav-font: #87e7ff;
+$nav-fontHover: #fff;
+
+/*font*/
+$wryh: '微软雅黑';
+/*function*/
+
+/*mixin*/
+@mixin bgs($url,$repeat:false,$direction:y) {
+  background-image: url($url);
+  -webkit-background-size:100% auto;
+  background-size:100% auto;
+  @if not($repeat) {
+    background-repeat: no-repeat;
+  } @else {
+    background-repeat: repeat-+$direction;
+  }
+}
+
+@function p2r($pixel) {
+  @if unitless($pixel) {
+    $pixel: $pixel *1px;
+  }
+  @return $pixel/$baseFont * 1rem;
+}
+
+
+
+

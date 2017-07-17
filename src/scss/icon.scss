@@ -1,0 +1,36 @@
+#{$id}icon {
+  display: inline-block;
+  background-position-y: center;
+  text-indent: 110%;
+  white-space: nowrap;
+  &:before {
+    content: 'icon';
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+  }
+}
+
+.icon-admin {
+  @include bgs($url-icon+'icon-admin.png');
+}
+
+.icon-exit {
+  @include bgs($url-icon+'icon-exit.png');
+}
+
+.icon-ssgl {
+  @include bgs($url-icon+'icon-ssgl.png');
+}
+
+.icon-ycgl {
+  @include bgs($url-icon+'icon-ycgl.png');
+}
+
+.icon-ljnh {
+  @include bgs($url-icon+'icon-ljnh.png');
+}
+
+.icon-jnxy {
+  @include bgs($url-icon+'icon-jnxy.png');
+}

@@ -3,6 +3,8 @@
   background-position-y: center;
   text-indent: 110%;
   white-space: nowrap;
+  -webkit-background-size: 100% auto!important;
+  background-size: 100% auto!important;
   &:before {
     content: 'icon';
     color: transparent;

@@ -54,8 +54,8 @@ $wryh: '微软雅黑';
 /*mixin*/
 @mixin bgs($url,$repeat:false,$direction:y) {
   background-image: url($url);
-  -webkit-background-size:100% auto;
-  background-size:100% auto;
+  -webkit-background-size:100% 100%;
+  background-size:100% 100%;
   @if not($repeat) {
     background-repeat: no-repeat;
   } @else {

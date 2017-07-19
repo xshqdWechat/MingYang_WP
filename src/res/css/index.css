@@ -35,7 +35,9 @@ a {
   display: inline-block;
   background-position-y: center;
   text-indent: 110%;
-  white-space: nowrap; }
+  white-space: nowrap;
+  -webkit-background-size: 100% auto !important;
+  background-size: 100% auto !important; }
   .mywp-icon:before {
     content: 'icon';
     color: transparent;
@@ -44,52 +46,52 @@ a {
 
 .icon-admin {
   background-image: url("../images/icon/icon-admin.png");
-  -webkit-background-size: 100% auto;
-  background-size: 100% auto;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat; }
 
 .icon-exit {
   background-image: url("../images/icon/icon-exit.png");
-  -webkit-background-size: 100% auto;
-  background-size: 100% auto;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat; }
 
 .icon-ssgl {
   background-image: url("../images/icon/icon-ssgl.png");
-  -webkit-background-size: 100% auto;
-  background-size: 100% auto;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat; }
 
 .icon-ycgl {
   background-image: url("../images/icon/icon-ycgl.png");
-  -webkit-background-size: 100% auto;
-  background-size: 100% auto;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat; }
 
 .icon-ljnh {
   background-image: url("../images/icon/icon-ljnh.png");
-  -webkit-background-size: 100% auto;
-  background-size: 100% auto;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat; }
 
 .icon-jnxy {
   background-image: url("../images/icon/icon-jnxy.png");
-  -webkit-background-size: 100% auto;
-  background-size: 100% auto;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat; }
 
 .mywp-wrap {
   width: 100%;
-  padding-bottom: 0.9rem;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 0.8rem;
   background-color: #020a11;
   font-family: "微软雅黑";
   background-image: url("../images/bg.png");
-  -webkit-background-size: 100% auto;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-color: #000108;
   -webkit-background-size: 100% 100%;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #000108; }
 
 .mywp-logo {
   float: left;
@@ -98,9 +100,11 @@ a {
     line-height: 0.94rem; }
   .mywp-logo a {
     background-image: url("../images/logo.png");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
-    background-repeat: no-repeat;
     background-position-y: bottom;
     width: 3.16rem;
     display: block;
@@ -128,7 +132,7 @@ a {
         display: block;
         background-color: #87e7ff;
         width: 0.05rem;
-        height: 0.24rem;
+        height: 0.2136rem;
         border-radius: 0.02rem; }
       .mywp-header .site-menu .nav:after {
         left: auto;
@@ -140,11 +144,11 @@ a {
         -webkit-transform: translateX(-50%);
         top: 0;
         background-image: url("../images/navtbg.png");
-        -webkit-background-size: 100% auto;
-        background-size: 100% auto;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
         background-repeat: repeat-x;
         width: 11.6rem;
-        height: 0.04rem;
+        height: 0.0356rem;
         z-index: 3; }
       .mywp-header .site-menu .nav .overBottom {
         position: absolute;
@@ -152,11 +156,11 @@ a {
         transform: translateX(-50%);
         bottom: 1px;
         background-image: url("../images/navbbg.png");
-        -webkit-background-size: 100% auto;
-        background-size: 100% auto;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
         background-repeat: repeat-x;
         width: 11.58rem;
-        height: 0.04rem;
+        height: 0.0356rem;
         z-index: 2; }
       .mywp-header .site-menu .nav a {
         position: relative;
@@ -164,17 +168,15 @@ a {
         border-width: 1px 0 1px;
         font-size: 0.26rem;
         width: 1.94rem;
-        height: 0.76rem;
-        line-height: 0.76rem;
+        height: 0.6764rem;
+        line-height: 0.6764rem;
         color: #87e7ff;
         display: inline-block;
         text-align: center;
         background-image: url("../images/navrbg.png");
-        -webkit-background-size: 100% auto;
-        background-size: 100% auto;
-        background-repeat: repeat-x;
         -webkit-background-size: 100% 100%;
-        background-size: 100% 100%; }
+        background-size: 100% 100%;
+        background-repeat: repeat-x; }
         .mywp-header .site-menu .nav a:after {
           content: '';
           display: block;
@@ -182,20 +184,18 @@ a {
           right: 0;
           position: absolute;
           width: 1px;
-          height: 0.8rem;
+          height: 0.712rem;
           background-image: url("../images/navdivied.png");
-          -webkit-background-size: 100% auto;
-          background-size: 100% auto;
+          -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
           background-repeat: no-repeat;
           transform: translateY(-50%); }
         .mywp-header .site-menu .nav a:hover, .mywp-header .site-menu .nav a.active {
           color: #fff;
           background-image: url("../images/navHbg.png");
-          -webkit-background-size: 100% auto;
-          background-size: 100% auto;
-          background-repeat: repeat-x;
           -webkit-background-size: 100% 100%;
-          background-size: 100% 100%; }
+          background-size: 100% 100%;
+          background-repeat: repeat-x; }
         .mywp-header .site-menu .nav a:nth-child(3) {
           border-radius: 10px 0 0 10px;
           border-left-width: 1px; }
@@ -208,14 +208,14 @@ a {
       margin-left: 0.56rem; }
       .mywp-header .site-menu .action a {
         color: #ffffff;
-        line-height: 0.94rem;
+        line-height: 0.8366rem;
         font-size: 0.18rem; }
         .mywp-header .site-menu .action a span {
           width: 0.57rem; }
     .mywp-header .site-menu .exitSystem {
       margin-left: 0.32rem; }
       .mywp-header .site-menu .exitSystem a {
-        line-height: 0.94rem; }
+        line-height: 0.8366rem; }
         .mywp-header .site-menu .exitSystem a span {
           width: 0.57rem; }
 
@@ -223,11 +223,11 @@ a {
   display: flex; }
   .mywp-main .sub-nav {
     background-image: url("../images/subbg.png");
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 2.74rem;
-    height: 7.82rem;
+    height: 6.9598rem;
     margin-top: 0.8rem;
     margin-right: 0.8rem;
     position: relative;
@@ -235,25 +235,25 @@ a {
     .mywp-main .sub-nav a {
       padding: 0 0.22rem 0 0.28rem;
       background-image: url("../images/subnav.png");
-      -webkit-background-size: 100% auto;
-      background-size: 100% auto;
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
       background-repeat: no-repeat;
       width: 2.4rem;
-      height: 1rem;
+      height: 0.89rem;
       display: flex;
       justify-content: space-between;
       font-size: 0.24rem;
       color: #ffffff;
       text-align: right;
-      line-height: 1rem;
+      line-height: 0.89rem;
       text-shadow: #009bff 0 0 4px;
       margin-bottom: 0.3rem; }
       .mywp-main .sub-nav a:last-child {
         margin-bottom: 0; }
       .mywp-main .sub-nav a:hover, .mywp-main .sub-nav a.active {
         background-image: url("../images/subnavh.png");
-        -webkit-background-size: 100% auto;
-        background-size: 100% auto;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
         background-repeat: no-repeat; }
       .mywp-main .sub-nav a span.icon-ssgl {
         width: 0.7rem; }
@@ -271,23 +271,21 @@ a {
       -webkit-transform: translateY(-50%);
       display: block;
       background-image: url("../images/subnav_toggle.png");
-      -webkit-background-size: 100% auto;
-      background-size: 100% auto;
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
       background-repeat: no-repeat;
       width: 0.43rem;
-      height: 3.55rem;
+      height: 3.1595rem;
       cursor: pointer; }
   .mywp-main .container {
     flex: 1;
     margin-top: 0.56rem;
     margin-right: 0.7rem;
     background-image: url("../images/containerbg.png");
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
-    height: 8.41rem; }
+    background-repeat: no-repeat;
+    height: 7.4849rem; }
   .mywp-main .mywp-cf {
     width: 100%;
     padding: 0.5rem 1rem;
@@ -302,14 +300,14 @@ a {
       position: relative;
       margin: 0 auto;
       width: 11.43rem;
-      height: 7.16rem;
+      height: 6.3724rem;
       background-image: url("../images/cfxt.png");
-      -webkit-background-size: 100% auto;
-      background-size: 100% auto;
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
       background-repeat: no-repeat; }
   .mywp-main span.dot {
     width: 0.18rem;
-    height: 0.18rem;
+    height: 0.1602rem;
     display: block;
     border-radius: 50%;
     border: 1px solid #45fff9;

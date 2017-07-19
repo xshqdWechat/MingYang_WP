@@ -3,6 +3,17 @@
 
     $(function () {
 
+        /*高度*/
+ /*       var realHeight  = $('body').height();
+        var scale = realHeight/1080;
+        console.log(scale);
+
+        $('body').css({transform:'scaleY('+scale+')'})
+        $(window).on('resize',function () {
+            var realHeight  = $('body').height();
+            var scale = realHeight/1080;
+            $('body').css({transform:'scaleY('+scale+')'})
+        })*/
         /*子菜单收缩呈现*/
         function subToggleShow() {
             var show = true;
@@ -21,67 +32,67 @@
         /*信息点生成*/
         var dots = [
             {
-                x: '3.25rem',
-                y: '0.13rem',
+                x: '3.25',
+                y: '0.13',
                 inf: '10*10'
             },
             {
-                x: '0.50rem',
-                y: '1.88rem',
+                x: '0.50',
+                y: '1.88',
                 inf: '20*20'
             },
             {
-                x: '0.77rem',
-                y: '1.88rem',
+                x: '0.77',
+                y: '1.88',
                 inf: '20*20'
             },
             {
-                x: '1.1rem',
-                y: '1.88rem',
+                x: '1.1',
+                y: '1.88',
                 inf: '20*20'
             },
             {
-                x: '4.94rem',
-                y: '1.88rem',
+                x: '4.94',
+                y: '1.88',
                 inf: '20*20'
             },
             {
-                x: '5.22rem',
-                y: '1.88rem',
+                x: '5.22',
+                y: '1.88',
                 inf: '20*20'
             },
             {
-                x: '10.67rem',
-                y: '1.88rem',
+                x: '10.67',
+                y: '1.88',
                 inf: '20*20'
             },
             {
-                x: '.62rem',
-                y: '2.37rem',
+                x: '.62',
+                y: '2.37',
                 inf: '20*20'
             },
             {
-                x: '5.06rem',
-                y: '2.27rem',
+                x: '5.06',
+                y: '2.27',
                 inf: '20*20'
             },
             {
-                x: '10.86rem',
-                y: '2.05rem',
+                x: '10.86',
+                y: '2.05',
                 inf: '20*20'
             },
             {
-                x: '10.86rem',
-                y: '1.88rem',
+                x: '10.86',
+                y: '1.88',
                 inf: '20*20'
             }
         ];
+
         Dot(dots);
 
         function Dot(list) {
             creatInfDot(list)
         }
-
         function creatInfDot(list) {
             for(var i =0,ii=list.length;i<ii;i++){
                 $('.cfxtImg').append(createDot(list[i]));
@@ -92,8 +103,8 @@
             if(dot&&dot.x&&dot.y){
                 var cssObj = {
                     position:'absolute',
-                    left:dot.x,
-                    top:dot.y
+                    left:dot.x+'rem',
+                    top:dot.y*.89+'rem'
                 };
                 var handleDot =  $('<span class="dot"></span>').css(cssObj);
                 //绑定提示框
@@ -113,8 +124,8 @@
 
             var cssObj = {
                 position:'absolute',
-                left:dot.x,
-                top:dot.y,
+                left:dot.x+'rem',
+                top:dot.y*.89+'rem',
                 width:'100px',
                 height:'100px',
                 backgroundColor:'#fff'

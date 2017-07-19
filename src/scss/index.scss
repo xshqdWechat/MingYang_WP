@@ -3,13 +3,14 @@
 
 #{$id}wrap {
   width: 100%;
-  padding-bottom: p2r(90);
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: p2r(80);
   background-color: $bg;
   font-family: $wryh;
   @include bgs($url+'bg.png');
   background-color: #000108;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
+
 }
 
 #{$id}logo {
@@ -20,6 +21,8 @@
   }
   a {
     @include bgs($url+'logo.png');
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
     background-position-y: bottom;
     width: p2r(316);
     display: block;
@@ -50,7 +53,7 @@
         display: block;
         background-color: #87e7ff;
         width: p2r(5);
-        height: p2r(24);
+        height: p2r(24*.89);
         border-radius: p2r(2);
       }
       &:after {
@@ -65,7 +68,7 @@
         top: 0;
         @include bgs($url+'navtbg.png', true, x);
         width: p2r(1160);
-        height: p2r(4);
+        height: p2r(4*.89);
         z-index: 3;
       }
       .overBottom{
@@ -75,7 +78,7 @@
         bottom: 1px;
         @include bgs($url+'navbbg.png', true, x);
         width: p2r(1158);
-        height: p2r(4);
+        height: p2r(4*.89);
         z-index: 2;
       }
       a {
@@ -84,14 +87,12 @@
         border-width: 1px 0 1px;
         font-size: p2r(26);
         width: p2r(194);
-        height: p2r(76);
-        line-height: p2r(76);
+        height: p2r(76*.89);
+        line-height: p2r(76*.89);
         color: $nav-font;
         display: inline-block;
         text-align: center;
         @include bgs($url+'navrbg.png', true, x);
-        -webkit-background-size: 100% 100%;
-        background-size: 100% 100%;
       &:after{
           content: '';
           display: block;
@@ -99,15 +100,13 @@
           right: 0;
           position: absolute;
           width:1px;
-          height:p2r(80);
+          height:p2r(80*.89);
           @include bgs($url+'navdivied.png');
           transform: translateY(-50%);
         }
         &:hover,&.active {
           color: $nav-fontHover;
           @include bgs($url+'navHbg.png', true, x);
-          -webkit-background-size: 100% 100%;
-          background-size: 100% 100%;
         }
         &:nth-child(3) {
           border-radius: 10px 0 0 10px;
@@ -126,7 +125,7 @@
       margin-left: p2r(56);
       a {
         color: #ffffff;
-        line-height: p2r(94);
+        line-height: p2r(94*.89);
         font-size: p2r(18);
         span {
           width: p2r(57);
@@ -136,7 +135,7 @@
     .exitSystem {
       margin-left: p2r(32);
       a {
-        line-height: p2r(94);
+        line-height: p2r(94*.89);
         span {
           width: p2r(57);
         }
@@ -152,7 +151,7 @@
     //float: left;
     @include bgs($url+'subbg.png');
     width:p2r(274);
-    height:p2r(782);
+    height:p2r(782*.89);
     margin-top:p2r(80);
     margin-right:p2r(80);
     position: relative;
@@ -161,13 +160,13 @@
       padding: 0 p2r(22) 0 p2r(28);
       @include bgs($url+'subnav.png');
       width:p2r(240);
-      height:p2r(100);
+      height:p2r(100*.89);
       display: flex;
       justify-content:space-between;
       font-size: p2r(24);
       color: #ffffff;
       text-align: right;
-      line-height:p2r(100);
+      line-height:p2r(100*.89);
       text-shadow: #009bff 0 0 4px;
       margin-bottom:p2r(30);
       &:last-child{
@@ -198,7 +197,7 @@
       display: block;
       @include bgs($url+'subnav_toggle.png');
       width:p2r(43);
-      height:p2r(355);
+      height:p2r(355*.89);
       cursor: pointer;
     }
   }
@@ -207,10 +206,8 @@
     margin-top:p2r(56);
     margin-right:p2r(70);
     @include bgs($url+'containerbg.png');
-    -webkit-background-size:100% 100%;
-    background-size:100% 100%;
     //width:p2r(1492);
-    height:p2r(841);
+    height:p2r(841*.89);
   }
   .mywp-cf{
     width: 100%;
@@ -228,14 +225,14 @@
       position: relative;
       margin: 0 auto;
       width:p2r(1143);
-      height:p2r(716);
+      height:p2r(716*.89);
       @include bgs($url+'cfxt.png');
     }
   }
 
   span.dot{
     width: p2r(18);
-    height:p2r(18);
+    height:p2r(18*.89);
     display: block;
     border-radius: 50%;
     border:1px solid #45fff9;

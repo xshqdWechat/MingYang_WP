@@ -121,7 +121,8 @@ a {
       float: left; }
     .mywp-header .site-menu .nav {
       padding-left: 0.02rem;
-      position: relative; }
+      position: relative;
+      display: flex; }
       .mywp-header .site-menu .nav:before, .mywp-header .site-menu .nav:after {
         left: -0.025rem;
         top: 50%;

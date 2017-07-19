@@ -129,7 +129,6 @@
                 width:'100px',
                 height:'100px',
                 backgroundColor:'#fff'
-
             };
             var inftoast = $('<div class="toast">123123</div>').html(dot.inf).css(cssObj);
             $('.cfxtImg').append(inftoast);

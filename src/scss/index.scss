@@ -43,6 +43,7 @@
     .nav {
       padding-left: p2r(2);
       position: relative;
+      display: flex;
       &:before, &:after {
         left: p2r(-2.5);
         top: 50%;

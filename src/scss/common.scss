@@ -10,7 +10,7 @@ html, body {
   height: 100%;
 }
 
-body{
+body {
   font-size: 12px;
 }
 
@@ -27,12 +27,19 @@ a {
   text-decoration: none;
 }
 
-.clearfix{
-  &:after,&:before{
+.clearfix {
+  &:after, &:before {
     content: '';
     display: block;
     clear: both;
   }
+}
+
+/*media*/
+$scaleHeight: 1;
+$baseHeight: 1080;
+@media screen and (max-height: 1475px) {
+  $scaleHeight: $baseHeight / 1080
 }
 
 $url: '../images/';
@@ -54,8 +61,8 @@ $wryh: '微软雅黑';
 /*mixin*/
 @mixin bgs($url,$repeat:false,$direction:y) {
   background-image: url($url);
-  -webkit-background-size:100% 100%;
-  background-size:100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
   @if not($repeat) {
     background-repeat: no-repeat;
   } @else {

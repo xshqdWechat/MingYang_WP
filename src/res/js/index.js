@@ -12,14 +12,12 @@
                 var realHeight = $('body').height();
                 scale = realHeight/(10.8*fontSize);
             }
-            console.log('scale:'+scale);
-            console.log('realHeight:'+realHeight);
             return scale;
-        }
-
-
-
-        $('.mywp-wrap').css({transform: 'scaleY(' + getScale() + ')',transformOrigin:'left top'});
+        };
+        $(window).on('resize',function () {
+            $('.mywp-wrap').css({transform: 'scaleY(' + getScale() + ')'});
+        });
+        $('.mywp-wrap').css({transform: 'scaleY(' + getScale() + ')'});
 
         /*子菜单收缩呈现*/
         function subToggleShow() {

@@ -7,6 +7,8 @@
   background-color: $bg;
   font-family: $wryh;
   @include bgs($url+'bg.png');
+  transform-origin: left top;
+  -webkit-transform-origin: left top;
   background-color: #000108;
 }
 

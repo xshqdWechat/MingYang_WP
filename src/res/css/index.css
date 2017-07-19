@@ -90,6 +90,8 @@ a {
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  transform-origin: left top;
+  -webkit-transform-origin: left top;
   background-color: #000108; }
 
 .mywp-logo {

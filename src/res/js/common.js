@@ -24,6 +24,8 @@
         }, false);
         refresh();
     }
+    //屏幕高
+
 
     if (typeof define === "function" && define.amd) {
         define("mywp", [], function () {

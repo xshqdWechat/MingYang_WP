@@ -113,6 +113,103 @@ a {
     overflow: hidden;
     white-space: nowrap; }
 
+#build-inf {
+  margin-left: 1.52rem;
+  margin-top: 0.1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10; }
+
+#build-tops {
+  width: 12.34rem;
+  margin: 0 auto;
+  position: relative; }
+
+.build1 {
+  position: absolute;
+  display: none; }
+
+.build2 {
+  position: absolute;
+  display: none; }
+
+.build3 {
+  position: absolute;
+  display: none; }
+
+.build4 {
+  position: absolute;
+  display: none; }
+
+.build5 {
+  position: absolute;
+  display: none; }
+
+.build6 {
+  position: absolute;
+  display: none; }
+
+.build1 {
+  background-image: url("../images/build/build1.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 3.78rem;
+  height: 2.82rem;
+  left: 7.75rem;
+  top: 1.08rem; }
+
+.build2 {
+  background-image: url("../images/build/build2.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2.56rem;
+  height: 2.04rem;
+  left: 7.16rem;
+  top: 0rem; }
+
+.build3 {
+  background-image: url("../images/build/build3.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2.54rem;
+  height: 2.15rem;
+  left: 4.72rem;
+  top: 3.66rem; }
+
+.build4 {
+  background-image: url("../images/build/build4.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 1.62rem;
+  height: 1.69rem;
+  left: 6.8rem;
+  top: 3.3rem; }
+
+.build5 {
+  background-image: url("../images/build/build5.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 3.36rem;
+  height: 2.3rem;
+  left: 3.48rem;
+  top: 1.56rem; }
+
+.build6 {
+  background-image: url("../images/build/build6.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 3.72rem;
+  height: 2.59rem;
+  left: 1.42rem;
+  top: 2.38rem; }
+
 .mywp-header {
   width: 100%; }
   .mywp-header .site-menu {

@@ -31,6 +31,70 @@
   }
 }
 
+#build-inf{
+  margin-left: 1.52rem;
+  margin-top:0.1rem;
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: 10;
+}
+#build-tops{
+  width: p2r(1234);
+  //height:p2r(723);
+  margin:0 auto;
+  position: relative;
+}
+@for $i from 1 through 6{
+  .build#{$i}{
+    position: absolute;
+    display: none;
+  }
+}
+.build1{
+  @include bgs($build+'build1.png');
+  width:p2r(378);
+  height:p2r(282);
+  left:p2r(775);
+  top:p2r(108)
+}
+.build2{
+  @include bgs($build+'build2.png');
+  width:p2r(256);
+  height:p2r(204);
+  left:p2r(716);
+  top:p2r(0)
+}
+.build3{
+  @include bgs($build+'build3.png');
+  width:p2r(254);
+  height:p2r(215);
+  left:p2r(472);
+  top:p2r(366)
+}
+.build4{
+  @include bgs($build+'build4.png');
+  width:p2r(162);
+  height:p2r(169);
+  left:p2r(680);
+  top:p2r(330)
+}
+.build5{
+  @include bgs($build+'build5.png');
+  width:p2r(336);
+  height:p2r(230);
+  left:p2r(348);
+  top:p2r(156)
+}
+.build6{
+  @include bgs($build+'build6.png');
+  width:p2r(372);
+  height:p2r(259);
+  left:p2r(142);
+  top:p2r(238)
+}
+
+
 #{$id}header {
   width: 100%;
   .site-menu {

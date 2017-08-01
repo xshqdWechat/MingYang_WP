@@ -78,6 +78,61 @@ $wryh: '微软雅黑';
   @return $pixel/$baseFont * 1rem;
 }
 
+/*通用组件*/
+#{$id}modal{
+  position: absolute;
+  left: 50%;
+  z-index: 9999;
+  width:p2r(406);
+  min-height:p2r(360);
+  padding: p2r(40);
+  border-radius: p2r(20);
+  background:-webkit-linear-gradient(bottom,#197cc1 0%, #183a67 25%,#0b0e32 50%,#0e2b56 75%,#1462a2 100%);
+  border:2px solid #00c6ff;
+  color: #ffffff;
+  font-size: p2r(18);
+  opacity: .95;
+  .mbgT{
+    width:100%;
+    position: absolute;
+    top: -2px;
+    left:0;
+    @include bgs($url+'modal/mbg.png');
+    height: p2r(107);
+  }
+  .mbgB{
+    width:100%;
+    position: absolute;
+    left:0;
+    bottom: -2px;
+    @include bgs($url+'modal/mbgb.png');
+    height: p2r(106);
+  }
+  .mbgL{
+    width:p2r(31);
+    height:p2r(300);
+    position: absolute;
+    left:p2r(-12);
+    top: 50%;
+    transform: translateY(-50%);
+    @include bgs($url+'modal/mbgL.png');
+  }
+  .mbgR{
+    width:p2r(31);
+    height:p2r(300);
+    position: absolute;
+    right:p2r(-8);
+    top: 50%;
+    transform: translateY(-50%);
+    @include bgs($url+'modal/mbgR.png');
+  }
+  .mbgwg{
+    min-height:p2r(360);
+    @include bgs($url+'modal/mgbWg.png',true,y);
+    background-position: center center;
+  }
+}
+
 
 
 

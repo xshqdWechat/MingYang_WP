@@ -79,13 +79,12 @@ $wryh: '微软雅黑';
 }
 
 /*通用组件*/
-#{$id}modal{
+#{$id}modal,#{$id}modal2{
   position: absolute;
   left: 50%;
   z-index: 9999;
   width:p2r(406);
   min-height:p2r(360);
-  padding: p2r(40);
   border-radius: p2r(20);
   background:-webkit-linear-gradient(bottom,#197cc1 0%, #183a67 25%,#0b0e32 50%,#0e2b56 75%,#1462a2 100%);
   border:2px solid #00c6ff;
@@ -128,11 +127,16 @@ $wryh: '微软雅黑';
   }
   .mbgwg{
     min-height:p2r(360);
+    padding: p2r(40);
     @include bgs($url+'modal/mgbWg.png',true,y);
     background-position: center center;
+    background-size: 100% auto;
   }
 }
 
+#{$id}modal2{
+  width: p2r(800);
+}
 
 
 

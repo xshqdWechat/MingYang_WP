@@ -33,20 +33,19 @@ a {
 /*function*/
 /*mixin*/
 /*通用组件*/
-.mywp-modal {
+.mywp-modal, .mywp-modal2 {
   position: absolute;
   left: 50%;
   z-index: 9999;
   width: 4.06rem;
   min-height: 3.6rem;
-  padding: 0.4rem;
   border-radius: 0.2rem;
   background: -webkit-linear-gradient(bottom, #197cc1 0%, #183a67 25%, #0b0e32 50%, #0e2b56 75%, #1462a2 100%);
   border: 2px solid #00c6ff;
   color: #ffffff;
   font-size: 0.18rem;
   opacity: .95; }
-  .mywp-modal .mbgT {
+  .mywp-modal .mbgT, .mywp-modal2 .mbgT {
     width: 100%;
     position: absolute;
     top: -2px;
@@ -56,7 +55,7 @@ a {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 1.07rem; }
-  .mywp-modal .mbgB {
+  .mywp-modal .mbgB, .mywp-modal2 .mbgB {
     width: 100%;
     position: absolute;
     left: 0;
@@ -66,7 +65,7 @@ a {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 1.06rem; }
-  .mywp-modal .mbgL {
+  .mywp-modal .mbgL, .mywp-modal2 .mbgL {
     width: 0.31rem;
     height: 3rem;
     position: absolute;
@@ -77,7 +76,7 @@ a {
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
-  .mywp-modal .mbgR {
+  .mywp-modal .mbgR, .mywp-modal2 .mbgR {
     width: 0.31rem;
     height: 3rem;
     position: absolute;
@@ -88,13 +87,18 @@ a {
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
-  .mywp-modal .mbgwg {
+  .mywp-modal .mbgwg, .mywp-modal2 .mbgwg {
     min-height: 3.6rem;
+    padding: 0.4rem;
     background-image: url("../images/modal/mgbWg.png");
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
     background-repeat: repeat-y;
-    background-position: center center; }
+    background-position: center center;
+    background-size: 100% auto; }
+
+.mywp-modal2 {
+  width: 8rem; }
 
 .mywp-icon {
   display: inline-block;

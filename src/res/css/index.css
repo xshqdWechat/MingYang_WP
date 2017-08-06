@@ -35,7 +35,8 @@ a {
 /*通用组件*/
 .mywp-modal, .mywp-modal2 {
   position: absolute;
-  left: 50%;
+  right: -0.8rem;
+  bottom: 0;
   z-index: 9999;
   width: 4.06rem;
   min-height: 3.6rem;
@@ -44,7 +45,8 @@ a {
   border: 2px solid #00c6ff;
   color: #ffffff;
   font-size: 0.18rem;
-  opacity: .95; }
+  opacity: .98;
+  display: none; }
   .mywp-modal .mbgT, .mywp-modal2 .mbgT {
     width: 100%;
     position: absolute;
@@ -64,7 +66,7 @@ a {
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 1.06rem; }
+    height: 0.4rem; }
   .mywp-modal .mbgL, .mywp-modal2 .mbgL {
     width: 0.31rem;
     height: 3rem;
@@ -96,6 +98,29 @@ a {
     background-repeat: repeat-y;
     background-position: center center;
     background-size: 100% auto; }
+    .mywp-modal .mbgwg h6, .mywp-modal2 .mbgwg h6 {
+      text-align: center;
+      font-size: 24px;
+      text-align: center;
+      color: #ffffff;
+      font-weight: normal; }
+    .mywp-modal .mbgwg div, .mywp-modal2 .mbgwg div {
+      display: flex;
+      font-size: 18px;
+      padding: 0 0.2rem;
+      margin: 0.1rem 0;
+      cursor: pointer;
+      align-items: center;
+      height: 0.4rem;
+      justify-content: center; }
+      .mywp-modal .mbgwg div span, .mywp-modal2 .mbgwg div span {
+        display: block; }
+      .mywp-modal .mbgwg div span:first-child, .mywp-modal2 .mbgwg div span:first-child {
+        width: 1.2rem; }
+      .mywp-modal .mbgwg div:hover, .mywp-modal2 .mbgwg div:hover {
+        border-radius: 0 0.1rem 0 0.1rem;
+        border: 1px solid #48c8f0;
+        background: -webkit-linear-gradient(left, #198dbe 0%, transparent 100%); }
 
 .mywp-modal2 {
   width: 8rem; }

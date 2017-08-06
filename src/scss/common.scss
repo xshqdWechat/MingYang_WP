@@ -79,62 +79,92 @@ $wryh: '微软雅黑';
 }
 
 /*通用组件*/
-#{$id}modal,#{$id}modal2{
+#{$id}modal, #{$id}modal2 {
   position: absolute;
-  left: 50%;
+  right: p2r(-80);
+  bottom: 0;
   z-index: 9999;
-  width:p2r(406);
-  min-height:p2r(360);
+  width: p2r(406);
+  min-height: p2r(360);
   border-radius: p2r(20);
-  background:-webkit-linear-gradient(bottom,#197cc1 0%, #183a67 25%,#0b0e32 50%,#0e2b56 75%,#1462a2 100%);
-  border:2px solid #00c6ff;
+  background: -webkit-linear-gradient(bottom, #197cc1 0%, #183a67 25%, #0b0e32 50%, #0e2b56 75%, #1462a2 100%);
+  border: 2px solid #00c6ff;
   color: #ffffff;
   font-size: p2r(18);
-  opacity: .95;
-  .mbgT{
-    width:100%;
+  opacity: .98;
+  display: none;
+  .mbgT {
+    width: 100%;
     position: absolute;
     top: -2px;
-    left:0;
+    left: 0;
     @include bgs($url+'modal/mbg.png');
     height: p2r(107);
   }
-  .mbgB{
-    width:100%;
+  .mbgB {
+    width: 100%;
     position: absolute;
-    left:0;
+    left: 0;
     bottom: -2px;
     @include bgs($url+'modal/mbgb.png');
-    height: p2r(106);
+    height: p2r(40);
   }
-  .mbgL{
-    width:p2r(31);
-    height:p2r(300);
+  .mbgL {
+    width: p2r(31);
+    height: p2r(300);
     position: absolute;
-    left:p2r(-12);
+    left: p2r(-12);
     top: 50%;
     transform: translateY(-50%);
     @include bgs($url+'modal/mbgL.png');
   }
-  .mbgR{
-    width:p2r(31);
-    height:p2r(300);
+  .mbgR {
+    width: p2r(31);
+    height: p2r(300);
     position: absolute;
-    right:p2r(-8);
+    right: p2r(-8);
     top: 50%;
     transform: translateY(-50%);
     @include bgs($url+'modal/mbgR.png');
   }
-  .mbgwg{
-    min-height:p2r(360);
+  .mbgwg {
+    min-height: p2r(360);
     padding: p2r(40);
-    @include bgs($url+'modal/mgbWg.png',true,y);
+    @include bgs($url+'modal/mgbWg.png', true, y);
     background-position: center center;
     background-size: 100% auto;
+    h6 {
+      text-align: center;
+      font-size: 24px;
+      text-align: center;
+      color: #ffffff;
+      font-weight: normal;
+    }
+    div {
+      display: flex;
+      font-size: 18px;
+      padding: 0 p2r(20);
+      margin: p2r(10) 0;
+      cursor: pointer;
+      align-items: center;
+      height: p2r(40);
+      justify-content: center;
+      span {
+        display: block;
+      }
+      span:first-child {
+        width: p2r(120);
+      }
+      &:hover {
+        border-radius: 0 p2r(10) 0 p2r(10);
+        border: 1px solid #48c8f0;
+        background: -webkit-linear-gradient(left, #198dbe 0%,transparent 100%);
+      }
+    }
   }
 }
 
-#{$id}modal2{
+#{$id}modal2 {
   width: p2r(800);
 }
 

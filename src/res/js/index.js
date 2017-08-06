@@ -4,6 +4,7 @@
 
     $(function () {
 
+
         /*高度*/
         mywp.fullScreen();
 
@@ -105,27 +106,99 @@
         ];
         //建筑信息
         var buildInf = {
-            1: {data: 1},
-            2: {data: 2},
-            3: {data: 3},
-            4: {data: 4},
-            5: {data: 5},
-            6: {data: 6}
+            1: {
+                title:'SCD车间',
+                data:{
+                    '实时功率':100+'kw',
+                    '累计电量':100+'kw/h',
+                    '频   率':100+'kw/h',
+                    '电   压':100+'V',
+                    '功率因数':100+'kw/h',
+                }
+            },
+            2: {
+                title:'SCD车间2',
+                data:{
+                    '实时功率':100+'kw',
+                    '累计电量':100+'kw/h',
+                    '频   率':100+'kw/h',
+                    '电   压':100+'V',
+                    '功率因数':100+'kw/h',
+                }
+            },
+            3: {
+                title:'SCD车间3',
+                data:{
+                    '实时功率':100+'kw',
+                    '累计电量':100+'kw/h',
+                    '频   率':100+'kw/h',
+                    '电   压':100+'V',
+                    '功率因数':100+'kw/h',
+                }
+            },
+            4: {
+                title:'SCD车间4',
+                data:{
+                    '实时功率':100+'kw',
+                    '累计电量':100+'kw/h',
+                    '频   率':100+'kw/h',
+                    '电   压':100+'V',
+                    '功率因数':100+'kw/h',
+                }
+            },
+            5: {
+                title:'SCD车间5',
+                data:{
+                    '实时功率':100+'kw',
+                    '累计电量':100+'kw/h',
+                    '频   率':100+'kw/h',
+                    '电   压':100+'V',
+                    '功率因数':100+'kw/h',
+                }
+            },
+            6: {
+                title:'SCD车间6',
+                data:{
+                    '实时功率':100+'kw',
+                    '累计电量':100+'kw/h',
+                    '频   率':100+'kw/h',
+                    '电   压':100+'V',
+                    '功率因数':100+'kw/h',
+                }
+            }
         };
         //回调
         var callback ={
             'mouseOver':function (d) {
-                console.log(d);
-                $('.build'+d.id).show();
-                console.log(buildInf[d.id]);
+                var cfTips = $('#cftips');
+                cfTips.show();
+                var title = $('<h6></h6>').text(buildInf[d.id].title);
+                var dataBox = $('<div></div>');
+                for(var key in buildInf[d.id].data){
+                    var data = $('<div></div>');
+                    var name = $('<span></span>').html(key);
+                    var value = $('<span></span>').html(buildInf[d.id].data[key]);
+                    data.append(name).append(value);
+                    dataBox.append(data)
+                }
+                dataBox = dataBox.html();
+                cfTips.find('.mbgwg').empty().append(title).append(dataBox);
+
             },
             'mouseOut':function (d) {
-                $('.build'+d.id).hide();
+                var cfTips = $('#cftips');
+                // cfTips.hide();
             }
-        }
+        };
+
+        // 点击去掉弹框
+        $(document).on('click',function () {
+            var cfTips = $('#cftips');
+            cfTips.hide();
+        })
+
         // 绘制
         mywp.drawSvg("#build-inf", paths,callback);
-
 
     })
 

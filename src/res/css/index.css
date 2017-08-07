@@ -117,6 +117,8 @@ a {
         display: block; }
       .mywp-modal .mbgwg div span:first-child, .mywp-modal2 .mbgwg div span:first-child {
         width: 1.2rem; }
+      .mywp-modal .mbgwg div span:last-child, .mywp-modal2 .mbgwg div span:last-child {
+        flex: 1; }
       .mywp-modal .mbgwg div:hover, .mywp-modal2 .mbgwg div:hover {
         border-radius: 0 0.1rem 0 0.1rem;
         border: 1px solid #48c8f0;

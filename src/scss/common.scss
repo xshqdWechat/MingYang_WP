@@ -155,6 +155,9 @@ $wryh: '微软雅黑';
       span:first-child {
         width: p2r(120);
       }
+      span:last-child{
+        flex: 1;
+      }
       &:hover {
         border-radius: 0 p2r(10) 0 p2r(10);
         border: 1px solid #48c8f0;

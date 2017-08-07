@@ -172,6 +172,7 @@
             'mouseOver':function (d) {
                 var cfTips = $('#cftips');
                 cfTips.show();
+                $('.build'+d.id).show();
                 var title = $('<h6></h6>').text(buildInf[d.id].title);
                 var dataBox = $('<div></div>');
                 for(var key in buildInf[d.id].data){
@@ -186,6 +187,7 @@
 
             },
             'mouseOut':function (d) {
+                $('.build'+d.id).hide();
                 var cfTips = $('#cftips');
                 // cfTips.hide();
             }

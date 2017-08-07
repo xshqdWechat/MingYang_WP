@@ -243,6 +243,10 @@ a {
   position: absolute;
   display: none; }
 
+.build7 {
+  position: absolute;
+  display: none; }
+
 .build1 {
   background-image: url("../images/build/build1.png");
   -webkit-background-size: 100% 100%;
@@ -302,6 +306,16 @@ a {
   height: 2.59rem;
   left: 1.42rem;
   top: 2.38rem; }
+
+.build7 {
+  background-image: url("../images/build/build7.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 1.45rem;
+  left: 1.96rem;
+  top: 2.74rem; }
 
 .mywp-header {
   width: 100%; }

@@ -45,7 +45,7 @@
   margin:0 auto;
   position: relative;
 }
-@for $i from 1 through 6{
+@for $i from 1 through 7{
   .build#{$i}{
     position: absolute;
     display: none;
@@ -87,11 +87,18 @@
   top:p2r(156)
 }
 .build6{
-  @include bgs($build+'build6.png');
-  width:p2r(372);
-  height:p2r(259);
-  left:p2r(142);
-  top:p2r(238)
+   @include bgs($build+'build6.png');
+   width:p2r(372);
+   height:p2r(259);
+   left:p2r(142);
+   top:p2r(238)
+ }
+.build7{
+  @include bgs($build+'build7.png');
+  width:p2r(240);
+  height:p2r(145);
+  left:p2r(196);
+  top:p2r(274)
 }
 
 

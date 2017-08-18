@@ -206,6 +206,48 @@ a {
   background-size: 100% 100%;
   background-repeat: no-repeat; }
 
+.icon-ydfhb {
+  background-image: url("../images/icon/icon-ydfhb.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.icon-ydltjb {
+  background-image: url("../images/icon/icon-ydltjb.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.icon-ydcbfx {
+  background-image: url("../images/icon/icon-ydcbfx.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.icon-tbfxb {
+  background-image: url("../images/icon/icon-tbfxb.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.icon-hbfxb {
+  background-image: url("../images/icon/icon-hbfxb.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.icon-gzfxb {
+  background-image: url("../images/icon/icon-gzfxb.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.icon-ssdl {
+  background-image: url("../images/icon/icon-ssdl.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
 .mywp-wrap {
   width: 100%;
   padding-bottom: 0.89rem;
@@ -469,7 +511,7 @@ a {
     margin-top: 0.8rem;
     margin-right: 0.8rem;
     position: relative;
-    padding: 0.15rem 0 0 0.15rem;
+    padding: 0 0.15rem;
     display: flex;
     align-content: center;
     flex-wrap: wrap; }
@@ -489,7 +531,7 @@ a {
       line-height: 1rem;
       text-shadow: #009bff 0 0 4px;
       margin-bottom: 0.3rem; }
-      .mywp-main .sub-nav a:last-child {
+      .mywp-main .sub-nav a:nth-last-of-type(1) {
         margin-bottom: 0; }
       .mywp-main .sub-nav a:hover, .mywp-main .sub-nav a.active {
         background-image: url("../images/subnavh.png");
@@ -515,6 +557,18 @@ a {
         width: 0.59rem; }
       .mywp-main .sub-nav a span.icon-ssdl {
         width: 0.69rem; }
+      .mywp-main .sub-nav a span.icon-ydfhb {
+        width: 0.43rem; }
+      .mywp-main .sub-nav a span.icon-ydltjb {
+        width: 0.46rem; }
+      .mywp-main .sub-nav a span.icon-ydcbfx {
+        width: 0.55rem; }
+      .mywp-main .sub-nav a span.icon-tbfxb {
+        width: 0.55rem; }
+      .mywp-main .sub-nav a span.icon-hbfxb {
+        width: 0.57rem; }
+      .mywp-main .sub-nav a span.icon-gzfxb {
+        width: 0.45rem; }
     .mywp-main .sub-nav .sub-nav-toggle {
       position: absolute;
       right: -0.43rem;

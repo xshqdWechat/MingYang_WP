@@ -176,6 +176,36 @@ a {
   background-size: 100% 100%;
   background-repeat: no-repeat; }
 
+.icon-sxdy {
+  background-image: url("../images/icon/icon-sxdy.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.icon-sxdl {
+  background-image: url("../images/icon/icon-sxdl.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.icon-jlpl {
+  background-image: url("../images/icon/icon-jlpl.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.icon-glys {
+  background-image: url("../images/icon/icon-glys.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.icon-ssdl {
+  background-image: url("../images/icon/icon-ssdl.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
 .mywp-wrap {
   width: 100%;
   padding-bottom: 0.89rem;
@@ -439,7 +469,10 @@ a {
     margin-top: 0.8rem;
     margin-right: 0.8rem;
     position: relative;
-    padding: 1.4rem 0 0 0.15rem; }
+    padding: 0.15rem 0 0 0.15rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap; }
     .mywp-main .sub-nav a {
       padding: 0 0.22rem 0 0.28rem;
       background-image: url("../images/subnav.png");
@@ -471,6 +504,17 @@ a {
         width: 0.48rem; }
       .mywp-main .sub-nav a span.icon-jnxy {
         width: 0.5rem; }
+      .mywp-main .sub-nav a span.icon-sxdy {
+        width: 0.6rem; }
+      .mywp-main .sub-nav a span.icon-sxdl {
+        width: 0.71rem;
+        margin-left: -0.04rem; }
+      .mywp-main .sub-nav a span.icon-jlpl {
+        width: 0.6rem; }
+      .mywp-main .sub-nav a span.icon-glys {
+        width: 0.59rem; }
+      .mywp-main .sub-nav a span.icon-ssdl {
+        width: 0.69rem; }
     .mywp-main .sub-nav .sub-nav-toggle {
       position: absolute;
       right: -0.43rem;
@@ -540,5 +584,15 @@ a {
       width: 60%;
       height: 60%;
       background-color: #45fff9; }
+  .mywp-main .tmcfbox {
+    position: relative;
+    width: 100%; }
+    .mywp-main .tmcfbox .tmcf {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+      opacity: .2; }
 
 /*# sourceMappingURL=index.css.map */

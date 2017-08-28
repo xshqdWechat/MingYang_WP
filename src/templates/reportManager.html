@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>报表管理</title>
     <link rel="stylesheet" href="../res/css/index.css">
+    <link rel="stylesheet" href="../res/css/reportManager.css">
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../res/js/d3.v3.min.js"></script>
     <script src="../res/js/common.js"></script>
     <script src="../res/js/index.js"></script>
+    <script src="../res/js/ui.js"></script>
 </head>
 <body>
 <div class="mywp-wrap">
@@ -42,15 +44,70 @@
         </div>
         <div class="tmcfbox">
             <div class="container">
-                <div class="mywp-cf">
-                    <div id="build-tops"></div>
+                <div class="wrap">
+                    <div class="flex-box">
+                        <div class="text1">
+                            控制参数：
+                            <ul>
+                                <li><input type="radio" id="1" checked="checked" name="dian" value="1">
+                                    <label name="a" class="radioUi" for="1"><span></span>谐波崎变率</label></li>
+                                <li>
+                                    <input type="radio" id="2" checked="checked" name="dian" value="2">
+                                    <label name="a" class="radioUi radioChecked" for="2"><span></span>频率偏差</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="3" checked="checked" name="dian" value="2">
+                                    <label name="a" class="radioUi" for="2"><span></span>三相不平衡度</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text2">
+                            工厂：
+                            <div class="selectUi">
+                                <em>明阳智慧能源集团</em> <span></span>
+                                <ul>
+                                    <li>明阳智慧能源集团</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="text3">
+                            计量仪表：
+                            <div class="selectUi">
+                                <em>明阳智慧能源集团</em> <span></span>
+                                <ul>
+                                    <li>明阳智慧能源集团</li>
+                                    <li>2P1冲洗站</li>
+                                    <li>2P2至SCD发电机</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P1冲洗站</li>
+                                    <li>2P2至SCD发电机</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="tmcf">
                 <img src="../res/images/cfxt.png" alt="">
             </div>
         </div>
-
     </div>
 </div>
 

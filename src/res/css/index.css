@@ -124,8 +124,114 @@ a {
         border: 1px solid #48c8f0;
         background: -webkit-linear-gradient(left, #198dbe 0%, transparent 100%); }
 
+.wrap {
+  padding: 0.5rem 0.6rem;
+  color: #ffffff;
+  font-size: 14px; }
+
 .mywp-modal2 {
   width: 8rem; }
+
+input[type="radio"] {
+  display: none; }
+
+.radioUi {
+  cursor: pointer; }
+  .radioUi span {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px #0ab4ff;
+    border-radius: 50%;
+    width: 0.14rem;
+    height: 0.14rem;
+    margin-right: 0.06rem; }
+
+.radioChecked span:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 0.06rem;
+  height: 0.06rem;
+  background-color: #fff;
+  border-radius: 50%; }
+
+.selectUi {
+  position: relative;
+  height: .28rem;
+  width: 1.74rem;
+  border: 1px solid #00c6ff;
+  background-color: #11548b;
+  line-height: .28rem;
+  color: #fff;
+  padding-left: .08rem;
+  cursor: pointer;
+  display: inline-block; }
+  .selectUi em {
+    font-style: normal; }
+  .selectUi span {
+    float: right;
+    height: .26rem;
+    width: .2rem;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    background: -webkit-linear-gradient(bottom, #0e4675 0%, #0887ba 100%); }
+    .selectUi span:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: inline-block;
+      background-image: url("../images/icon/arrowDown.png");
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: .1rem;
+      height: .06rem; }
+  .selectUi ul {
+    display: none;
+    position: absolute;
+    top: .28rem;
+    left: 0;
+    background-color: #0c395e;
+    border: 1px solid #fff;
+    width: 1.73rem;
+    max-height: 1.82rem;
+    padding-left: .08rem;
+    overflow-y: scroll;
+    /*定义滚动条轨道*/
+    /*定义滑块*/ }
+    .selectUi ul::-webkit-scrollbar {
+      width: .21rem; }
+    .selectUi ul::-webkit-scrollbar-track {
+      background-color: #0c395e; }
+    .selectUi ul::-webkit-scrollbar-thumb {
+      border: 1px solid #fff;
+      border-right: none;
+      background-color: #00c6ff; }
+    .selectUi ul::-webkit-scrollbar-button:vertical:start {
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      background-size: 50%;
+      height: .18rem;
+      background: url("../images/icon/arrowUp.png") center center no-repeat, -webkit-linear-gradient(bottom, #0e4675 0%, #0887ba 100%); }
+    .selectUi ul::-webkit-scrollbar-button:vertical:end {
+      background-image: url("../images/icon/arrowDown.png");
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border-left: 1px solid #fff;
+      background-size: 50%;
+      border-top: 1px solid #fff;
+      height: .18rem;
+      background: url("../images/icon/arrowDown.png") center center no-repeat, -webkit-linear-gradient(bottom, #0e4675 0%, #0887ba 100%); }
 
 .mywp-icon {
   display: inline-block;

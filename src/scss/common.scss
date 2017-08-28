@@ -166,10 +166,134 @@ $wryh: '微软雅黑';
     }
   }
 }
+.wrap{
+  padding: p2r(50) p2r(60);
+  color: #ffffff;
+  font-size: 14px;
+}
 
 #{$id}modal2 {
   width: p2r(800);
 }
 
+//单选
+input[type="radio"] {
+  display: none;
+}
+.radioUi{
+  cursor: pointer;
+  span{
+    position: relative;
+    display: inline-block;
+    border:2px solid #fff;
+    box-shadow:0 0 5px #0ab4ff;
+    border-radius: 50%;
+    width:p2r(14);
+    height:p2r(14);
+    margin-right:p2r(6);
+  }
+}
 
+.radioChecked{
+  span{
+    &:before{
+      content: '';
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      display: block;
+      width: p2r(6);
+      height: p2r(6);
+      background-color: #fff;
+      border-radius: 50%;
+    }
+  }
+}
+
+.selectUi{
+  position: relative;
+  height: .28rem;
+  width:1.74rem;
+  border:1px solid #00c6ff;
+  background-color: #11548b;
+  line-height:.28rem;
+  color: #fff;
+  padding-left:.08rem;
+  cursor: pointer;
+  display: inline-block;
+  em{
+    font-style: normal;
+  }
+  span{
+    float:right;
+    height:.26rem;
+    width:.2rem;
+    border:1px solid #fff;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    background: -webkit-linear-gradient(bottom, #0e4675 0%,#0887ba 100%);
+    &:before{
+      content: '';
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      display: inline-block;
+      @include bgs($url+'icon/arrowDown.png');
+      width: .1rem;
+      height: .06rem;
+    }
+  }
+  ul{
+    display: none;
+    position: absolute;
+    top:.28rem;
+    left:0;
+    background-color: #0c395e;
+    border:1px solid #fff;
+    width:1.73rem;
+    max-height: 1.82rem;
+    padding-left:.08rem;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar
+    {
+      width: .21rem;
+    }
+
+    /*定义滚动条轨道*/
+    &::-webkit-scrollbar-track
+    {
+      //border-left:1px solid #fff;
+      background-color: #0c395e;
+    }
+
+    /*定义滑块*/
+    &::-webkit-scrollbar-thumb
+    {
+      border:1px solid #fff;
+      border-right:none;
+      background-color: #00c6ff;
+    }
+    &::-webkit-scrollbar-button:vertical:start{
+      //@include bgs($url+'icon/arrowUp.png');
+      border-left:1px solid #fff;
+      border-bottom:1px solid #fff;
+      background-size:50%;
+      height:.18rem;
+      background:url($url+'icon/arrowUp.png') center center no-repeat,-webkit-linear-gradient(bottom, #0e4675 0%,#0887ba 100%);
+    }
+    &::-webkit-scrollbar-button:vertical:end{
+      @include bgs($url+'icon/arrowDown.png');
+      border-left:1px solid #fff;
+      background-size:50%;
+      border-top:1px solid #fff;
+      height:.18rem;
+      background:url($url+'icon/arrowDown.png') center center no-repeat,-webkit-linear-gradient(bottom, #0e4675 0%,#0887ba 100%);
+    }
+  }
+}
 

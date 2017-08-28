@@ -1,0 +1,16 @@
+.flex-box{
+  display: flex;
+  align-content: center;
+}
+
+.text1 {
+  height:.28rem;
+  line-height:.28rem;
+  ul{
+    display: inline-block;
+    li{
+      display: inline-block;
+      margin-right:.18rem;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.flex-box {
+  display: flex;
+  align-content: center; }
+
+.text1 {
+  height: .28rem;
+  line-height: .28rem; }
+  .text1 ul {
+    display: inline-block; }
+    .text1 ul li {
+      display: inline-block;
+      margin-right: .18rem; }
+
+/*# sourceMappingURL=reportManager.css.map */

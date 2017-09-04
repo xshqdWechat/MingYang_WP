@@ -207,6 +207,15 @@
                 $('.build'+d.id).hide();
                 var cfTips = $('#cftips');
                 // cfTips.hide();
+            },
+            'click':function (d) {
+                console.log("!!");
+                console.log(d.id);
+                if(d.id==1){
+                    console.log($('.scd'));
+                    $('.scd').show();
+                    $('.mywp-cf').hide();
+                }
             }
         };
 

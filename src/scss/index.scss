@@ -336,6 +336,7 @@
     }
   }
   .mywp-cfxt {
+    display: none;
     width: 100%;
     padding: p2r(50) p2r(100);
     .cfxtImg {
@@ -345,6 +346,16 @@
       height: p2r(716);
       @include bgs($url+'cfxt.png');
     }
+  }
+
+  .men{
+    width:1100px;
+    margin:20px auto 0;
+    padding-right:50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #00c6ff;
   }
 
   span.dot {

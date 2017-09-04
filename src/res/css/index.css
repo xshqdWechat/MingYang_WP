@@ -706,6 +706,7 @@ input[type="radio"] {
       width: 12.34rem;
       height: 100%; }
   .mywp-main .mywp-cfxt {
+    display: none;
     width: 100%;
     padding: 0.5rem 1rem; }
     .mywp-main .mywp-cfxt .cfxtImg {
@@ -717,6 +718,14 @@ input[type="radio"] {
       -webkit-background-size: 100% 100%;
       background-size: 100% 100%;
       background-repeat: no-repeat; }
+  .mywp-main .men {
+    width: 1100px;
+    margin: 20px auto 0;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #00c6ff; }
   .mywp-main span.dot {
     width: 0.18rem;
     height: 0.18rem;

@@ -52,7 +52,7 @@
     function drawSvg(id,pathData,callback) {
         d3.select(id).selectAll(".build").data(pathData).enter().append("path").attr("class","build").attr("d",function (data) {
             return data.d;
-        }).style({"fill":"transparent","cursor":"pointer"}).on("mouseover",callback.mouseOver).on("mouseout",callback.mouseOut);
+        }).style({"fill":"transparent","cursor":"pointer"}).on("mouseover",callback.mouseOver).on("mouseout",callback.mouseOut).on('click',callback.click?callback.click:$.noop);
         d3.select(".mywp-cf").style("overflow","hidden");
     }
 

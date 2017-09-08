@@ -689,6 +689,31 @@ input[type="radio"] {
       width: 0.43rem;
       height: 3.55rem;
       cursor: pointer; }
+  .mywp-main .myinf {
+    color: #ffffff;
+    font-size: 18px;
+    background-image: url("../images/subbg.png");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 2.74rem;
+    height: 7.82rem;
+    margin-top: 0.8rem;
+    margin-right: 0.8rem;
+    position: absolute;
+    z-index: -1;
+    padding: 0.15rem;
+    left: 0.6rem; }
+    .mywp-main .myinf ul {
+      margin-top: 0.16rem; }
+    .mywp-main .myinf li {
+      line-height: 32px; }
+    .mywp-main .myinf h5 {
+      font-size: 24px; }
+  .mywp-main .tmp2 {
+    width: 2.74rem;
+    height: 7.82rem;
+    margin-top: 0.8rem; }
   .mywp-main .container {
     flex: 1;
     margin-top: 0.56rem;

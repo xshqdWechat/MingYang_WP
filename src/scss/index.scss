@@ -318,6 +318,33 @@
       cursor: pointer;
     }
   }
+  .myinf{
+    color: #ffffff;
+    font-size: 18px;
+    @include bgs($url+'subbg.png');
+    width: p2r(274);
+    height: p2r(782);
+    margin-top: p2r(80);
+    margin-right: p2r(80);
+    position: absolute;
+    z-index: -1;
+    padding:p2r(15);
+    left: p2r(60);
+    ul{
+      margin-top:p2r(16);
+    }
+    li{
+      line-height:32px;
+    }
+    h5{
+      font-size: 24px
+    }
+  }
+  .tmp2{
+    width: p2r(274);
+    height: p2r(782);
+    margin-top: p2r(80);
+  }
   .container {
     flex: 1;
     margin-top: p2r(56);

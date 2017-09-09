@@ -98,14 +98,17 @@ $wryh: '微软雅黑';
     position: absolute;
     top: -2px;
     left: 0;
+    border-radius:p2r(20) p2r(20) 0 0;
     @include bgs($url+'modal/mbg.png');
     height: p2r(107);
+    z-index: -1;
   }
   .mbgB {
     width: 100%;
     position: absolute;
     left: 0;
     bottom: -2px;
+    border-radius: 0 0 p2r(20) p2r(20);
     @include bgs($url+'modal/mbgb.png');
     height: p2r(40);
   }
@@ -173,7 +176,30 @@ $wryh: '微软雅黑';
 }
 
 #{$id}modal2 {
-  width: p2r(800);
+  display: block;
+  left: p2r(80);
+  width: p2r(666);
+  //min-height: p2r(422);
+  height: auto!important;
+  .mbgT {
+    border-radius:p2r(20) p2r(20) 0 0;
+    @include bgs($url+'modal/mbg2.png');
+  }
+  .mbgB {
+    border-radius: 0 0 p2r(20) p2r(20);
+    @include bgs($url+'modal/mbgb2.png');
+  }
+  .mbgwg {
+    min-height: p2r(395);
+    @include bgs($url+'modal/mgbWg2.png', true, y);
+    background-size: 100% auto;
+    div{
+      margin: 0;
+    }
+    span:first-child {
+      width: auto!important;
+    }
+  }
 }
 
 //单选

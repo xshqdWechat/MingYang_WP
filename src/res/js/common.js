@@ -1,10 +1,10 @@
-(function (window,$,d3) {
+(function (window, $, d3) {
     "use strict";
     var mywp = {
-        setAdaption:setAdaption,
-        drawSvg:drawSvg,
-        fullScreen:fullScreen,
-        dot:dot
+        setAdaption: setAdaption,
+        drawSvg: drawSvg,
+        fullScreen: fullScreen,
+        dot: dot
     };
 
 
@@ -49,11 +49,14 @@
     }
 
     // 绘制SVG
-    function drawSvg(id,pathData,callback) {
-        d3.select(id).selectAll(".build").data(pathData).enter().append("path").attr("class","build").attr("d",function (data) {
+    function drawSvg(id, pathData, callback) {
+        d3.select(id).selectAll(".build").data(pathData).enter().append("path").attr("class", "build").attr("d", function (data) {
             return data.d;
-        }).style({"fill":"transparent","cursor":"pointer"}).on("mouseover",callback.mouseOver).on("mouseout",callback.mouseOut).on('click',callback.click?callback.click:$.noop);
-        d3.select(".mywp-cf").style("overflow","hidden");
+        }).style({
+            "fill": "transparent",
+            "cursor": "pointer"
+        }).on("mouseover", callback.mouseOver).on("mouseout", callback.mouseOut).on('click', callback.click ? callback.click : $.noop);
+        d3.select(".mywp-cf").style("overflow", "hidden");
     }
 
     // 信息点
@@ -64,6 +67,7 @@
                 $('.cfxtImg').append(createDot(list[i]));
             }
         }
+
         // 创建信息点
         function createDot(dot) {
             if (dot && dot.x && dot.y) {
@@ -82,28 +86,38 @@
                 console.log('x,y是必要参数');
             }
         }
+
         // 提示框
         function infToast(dot) {
             // 清除已存在的提示
-            var toast = $('.toast');
-            toast && toast.remove();
+            /*  var toast = $('.mywp-modal2');
+             toast && toast.remove();*/
 
             var cssObj = {
-                position: 'absolute',
                 left: dot.x + 'rem',
                 top: dot.y * .89 + 'rem',
-                width: '100px',
-                height: '100px',
-                backgroundColor: '#fff'
             };
-            var inftoast = $('<div class="toast">123123</div>').html(dot.inf).css(cssObj);
+            var inftoast = $('.mywp-modal2').find('.mbgwg').html(getInf(dot)).parent().css(cssObj);
             $('.cfxtImg').append(inftoast);
         }
+
+        //根信息点返回HTML
+        function getInf(dot) {
+            var html = '';
+            if (dot.inf instanceof Array) {
+                dot.inf.forEach(function (value) {
+                    html +='<div><span>'+ value[0] + '</span>'+'<span>'+ value[1] +'</span></div>';
+                })
+            }else{
+                console.log('dot.inf必须为数组类型')
+            }
+            return html;
+        }
+
         // 边界监测
         function borderCheck() {
         };
     }
-
 
 
     if (typeof define === "function" && define.amd) {
@@ -113,4 +127,4 @@
     } else {
         window.mywp = mywp;
     }
-})(typeof window !== "undefined" ? window : this,jQuery,d3)
+})(typeof window !== "undefined" ? window : this, jQuery, d3)

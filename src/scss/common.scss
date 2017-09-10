@@ -85,7 +85,7 @@ $wryh: '微软雅黑';
   bottom: 0;
   z-index: 9999;
   width: p2r(406);
-  min-height: p2r(360);
+  //min-height: p2r(360);
   border-radius: p2r(20);
   background: -webkit-linear-gradient(bottom, #197cc1 0%, #183a67 25%, #0b0e32 50%, #0e2b56 75%, #1462a2 100%);
   border: 2px solid #00c6ff;
@@ -177,7 +177,7 @@ $wryh: '微软雅黑';
 #{$id}modal2 {
   left: p2r(80);
   width: p2r(666);
-  height: auto;
+  bottom: auto;
   .mbgT {
     border-radius:p2r(20) p2r(20) 0 0;
     @include bgs($url+'modal/mbg2.png');

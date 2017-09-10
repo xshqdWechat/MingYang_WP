@@ -90,18 +90,16 @@
         // 提示框
         function infToast(dot) {
             // 清除已存在的提示
-         /*     var toast = $('.mywp-modal2');
-             toast && toast.remove();*/
+              var toast = $('.mywp-modal2');
+             toast && toast.remove();
 
             var cssObj = {
                 left: dot.x + 'rem',
                 top: dot.y * .89 + 'rem',
                 display:'block'
             };
-            // var inftoast = $('<div></div>').html(getInf(dot)).css(cssObj)
-
-            var inftoast = $('.mywp-modal2').find('.mbgwg').html(getInf(dot)).parent().css(cssObj);
-
+            var inftoast = $('<div class="mywp-modal2"><div class="mbgT"></div><div class="mbgB"></div><div class="mbgL"></div><div class="mbgR"></div><div class="mbgwg"></div></div>').css(cssObj);
+            inftoast.find('.mbgwg').html(getInf(dot));
             $('.cfxtImg').append(inftoast);
         }
 

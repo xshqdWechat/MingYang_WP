@@ -39,7 +39,6 @@ a {
   bottom: 0;
   z-index: 9999;
   width: 4.06rem;
-  min-height: 3.6rem;
   border-radius: 0.2rem;
   background: -webkit-linear-gradient(bottom, #197cc1 0%, #183a67 25%, #0b0e32 50%, #0e2b56 75%, #1462a2 100%);
   border: 2px solid #00c6ff;
@@ -134,7 +133,7 @@ a {
 .mywp-modal2 {
   left: 0.8rem;
   width: 6.66rem;
-  height: auto; }
+  bottom: auto; }
   .mywp-modal2 .mbgT {
     border-radius: 0.2rem 0.2rem 0 0;
     background-image: url("../images/modal/mbg2.png");

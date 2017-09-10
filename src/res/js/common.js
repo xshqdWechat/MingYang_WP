@@ -90,14 +90,18 @@
         // 提示框
         function infToast(dot) {
             // 清除已存在的提示
-            /*  var toast = $('.mywp-modal2');
+         /*     var toast = $('.mywp-modal2');
              toast && toast.remove();*/
 
             var cssObj = {
                 left: dot.x + 'rem',
                 top: dot.y * .89 + 'rem',
+                display:'block'
             };
+            // var inftoast = $('<div></div>').html(getInf(dot)).css(cssObj)
+
             var inftoast = $('.mywp-modal2').find('.mbgwg').html(getInf(dot)).parent().css(cssObj);
+
             $('.cfxtImg').append(inftoast);
         }
 

@@ -110,12 +110,11 @@ a {
     .mywp-modal .mbgwg div, .mywp-modal2 .mbgwg div {
       display: flex;
       font-size: 18px;
-      padding: 0 0.2rem;
+      padding: 0.05rem 0.2rem;
       margin: 0.1rem 0;
       cursor: pointer;
-      align-items: center;
-      height: 0.4rem;
-      justify-content: center; }
+      justify-content: center;
+      border: 1px solid transparent; }
       .mywp-modal .mbgwg div span, .mywp-modal2 .mbgwg div span {
         display: block; }
       .mywp-modal .mbgwg div span:first-child, .mywp-modal2 .mbgwg div span:first-child {
@@ -133,10 +132,9 @@ a {
   font-size: 14px; }
 
 .mywp-modal2 {
-  display: block;
   left: 0.8rem;
   width: 6.66rem;
-  height: auto !important; }
+  height: auto; }
   .mywp-modal2 .mbgT {
     border-radius: 0.2rem 0.2rem 0 0;
     background-image: url("../images/modal/mbg2.png");

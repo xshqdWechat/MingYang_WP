@@ -146,12 +146,11 @@ $wryh: '微软雅黑';
     div {
       display: flex;
       font-size: 18px;
-      padding: 0 p2r(20);
+      padding: p2r(5) p2r(20);
       margin: p2r(10) 0;
       cursor: pointer;
-      align-items: center;
-      height: p2r(40);
       justify-content: center;
+      border:1px solid transparent;
       span {
         display: block;
       }
@@ -176,11 +175,9 @@ $wryh: '微软雅黑';
 }
 
 #{$id}modal2 {
-  display: block;
   left: p2r(80);
   width: p2r(666);
-  //min-height: p2r(422);
-  height: auto!important;
+  height: auto;
   .mbgT {
     border-radius:p2r(20) p2r(20) 0 0;
     @include bgs($url+'modal/mbg2.png');

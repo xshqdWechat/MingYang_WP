@@ -426,6 +426,9 @@
 
         ];
         mywp.dot(dots);
+        document.addEventListener('click',function () {
+            $('.mywp-modal2').remove();
+        })
 
     })
 

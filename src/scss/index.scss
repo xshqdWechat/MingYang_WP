@@ -305,7 +305,7 @@
       }
 
     }
-    .sub-nav-toggle {
+    .sub-nav-toggle,.sub-nav-toggle2 {
       position: absolute;
       right: p2r(-43);
       top: 50%;
@@ -317,6 +317,9 @@
       height: p2r(355);
       cursor: pointer;
     }
+    .sub-nav-toggle2 {
+      @include bgs($url+'subnav_toggle2.png');
+    }
   }
   .myinf{
     color: #ffffff;
@@ -325,25 +328,65 @@
     width: p2r(274);
     height: p2r(782);
     margin-top: p2r(80);
-    margin-right: p2r(80);
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     padding:p2r(15);
-    left: p2r(60);
+    left: p2r(0);
     ul{
       margin-top:p2r(16);
     }
     li{
+      font-size: 18px;
+      @include bgs($url+'liicon.png');
+      background-position: left p2r(12);
+      background-repeat:no-repeat;
+      background-size: auto auto;
+      padding-left: p2r(20);
       line-height:32px;
+      margin-bottom:p2r(8);
+      span{
+        color: #01bdf3;
+      }
+      em{
+        display: block;
+        font-size: 26px;
+        font-style: normal;
+        color: #00c6ff;
+        font-weight: normal;
+        -webkit-font-smoothing:antialiased;
+        span{
+          font-size: 18px;
+        }
+      }
     }
     h5{
-      font-size: 24px
+      font-size: 28px;
+      text-align: center;
+      line-height:p2r(111);
+      font-weight:normal;
+      width:p2r(270);
+      height:p2r(111);
+      margin:p2r(-15) 0 p2r(8) p2r(-13);
+      @include bgs($url+'subnewbg.png');
+    }
+    .sub-nav-toggle2 {
+      position: absolute;
+      right: p2r(-43);
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      display: block;
+      @include bgs($url+'subnav_toggle2.png');
+      width: p2r(43);
+      height: p2r(355);
+      cursor: pointer;
     }
   }
   .tmp2{
-    width: p2r(274);
+    width: p2r(430);
     height: p2r(782);
     margin-top: p2r(80);
+    //margin-right: p2r(80);
   }
   .container {
     flex: 1;
@@ -363,7 +406,6 @@
     }
   }
   .mywp-cfxt {
-    display: none;
     width: 100%;
     padding: p2r(50) p2r(100);
     .cfxtImg {

@@ -701,7 +701,7 @@ input[type="radio"] {
         width: 0.57rem; }
       .mywp-main .sub-nav a span.icon-gzfxb {
         width: 0.45rem; }
-    .mywp-main .sub-nav .sub-nav-toggle {
+    .mywp-main .sub-nav .sub-nav-toggle, .mywp-main .sub-nav .sub-nav-toggle2 {
       position: absolute;
       right: -0.43rem;
       top: 50%;
@@ -715,6 +715,11 @@ input[type="radio"] {
       width: 0.43rem;
       height: 3.55rem;
       cursor: pointer; }
+    .mywp-main .sub-nav .sub-nav-toggle2 {
+      background-image: url("../images/subnav_toggle2.png");
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat; }
   .mywp-main .myinf {
     color: #ffffff;
     font-size: 18px;
@@ -725,19 +730,63 @@ input[type="radio"] {
     width: 2.74rem;
     height: 7.82rem;
     margin-top: 0.8rem;
-    margin-right: 0.8rem;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     padding: 0.15rem;
-    left: 0.6rem; }
+    left: 0rem; }
     .mywp-main .myinf ul {
       margin-top: 0.16rem; }
     .mywp-main .myinf li {
-      line-height: 32px; }
+      font-size: 18px;
+      background-image: url("../images/liicon.png");
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: left 0.12rem;
+      background-repeat: no-repeat;
+      background-size: auto auto;
+      padding-left: 0.2rem;
+      line-height: 32px;
+      margin-bottom: 0.08rem; }
+      .mywp-main .myinf li span {
+        color: #01bdf3; }
+      .mywp-main .myinf li em {
+        display: block;
+        font-size: 26px;
+        font-style: normal;
+        color: #00c6ff;
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased; }
+        .mywp-main .myinf li em span {
+          font-size: 18px; }
     .mywp-main .myinf h5 {
-      font-size: 24px; }
+      font-size: 28px;
+      text-align: center;
+      line-height: 1.11rem;
+      font-weight: normal;
+      width: 2.7rem;
+      height: 1.11rem;
+      margin: -0.15rem 0 0.08rem -0.13rem;
+      background-image: url("../images/subnewbg.png");
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat; }
+    .mywp-main .myinf .sub-nav-toggle2 {
+      position: absolute;
+      right: -0.43rem;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      display: block;
+      background-image: url("../images/subnav_toggle2.png");
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: 0.43rem;
+      height: 3.55rem;
+      cursor: pointer; }
   .mywp-main .tmp2 {
-    width: 2.74rem;
+    width: 4.3rem;
     height: 7.82rem;
     margin-top: 0.8rem; }
   .mywp-main .container {
@@ -757,7 +806,6 @@ input[type="radio"] {
       width: 12.34rem;
       height: 100%; }
   .mywp-main .mywp-cfxt {
-    display: none;
     width: 100%;
     padding: 0.5rem 1rem; }
     .mywp-main .mywp-cfxt .cfxtImg {

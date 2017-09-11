@@ -61,7 +61,13 @@
 
     // 信息点
     function dot(list) {
-        creatInfDot(list)
+        // 边界判断
+        var Width = $('body').width()/100,
+            Height = $('body').height()/100,
+            subWidth = $('.cfxtImg')[0].getBoundingClientRect().left/100,
+            subHeight = $('.cfxtImg')[0].getBoundingClientRect().top/100;
+
+        creatInfDot(list);
         function creatInfDot(list) {
             for (var i = 0, ii = list.length; i < ii; i++) {
                 $('.cfxtImg').append(createDot(list[i]));
@@ -78,8 +84,18 @@
                 };
                 var handleDot = $('<span class="dot"></span>').css(cssObj);
                 //绑定提示框
-                handleDot.click(function () {
+                handleDot.mouseenter(function (e) {
+                    e.stopPropagation();
+                    console.log(this)
+                    console.log("----------------")
                     infToast(dot);
+                });
+                handleDot.mouseleave(function (e) {
+                    e.stopPropagation();
+                    console.log(this)
+                    /*  var toast = $('.mywp-modal2');
+                     toast && toast.remove();
+                     e.stopPropagation();*/
                 });
                 return handleDot;
             } else {
@@ -90,17 +106,17 @@
         // 提示框
         function infToast(dot) {
             // 清除已存在的提示
-              var toast = $('.mywp-modal2');
-             toast && toast.remove();
+            var toast = $('.mywp-modal2');
+            toast && toast.remove();
 
-            var cssObj = {
-                left: dot.x + 'rem',
-                top: dot.y * .89 + 'rem',
-                display:'block'
-            };
-            var inftoast = $('<div class="mywp-modal2"><div class="mbgT"></div><div class="mbgB"></div><div class="mbgL"></div><div class="mbgR"></div><div class="mbgwg"></div></div>').css(cssObj);
+            var inftoast = $('<div class="mywp-modal2"><div class="mbgT"></div><div class="mbgB"></div><div class="mbgL"></div><div class="mbgR"></div><div class="mbgwg"></div></div>');
             inftoast.find('.mbgwg').html(getInf(dot));
+
             $('.cfxtImg').append(inftoast);
+
+            //边界判断
+            borderCheck(dot,inftoast);
+
         }
 
         //根信息点返回HTML
@@ -108,16 +124,35 @@
             var html = '';
             if (dot.inf instanceof Array) {
                 dot.inf.forEach(function (value) {
-                    html +='<div><span>'+ value[0] + '</span>'+'<span>'+ value[1] +'</span></div>';
+                    html += '<div><span>' + value[0] + '</span>' + '<span>' + value[1] + '</span></div>';
                 })
-            }else{
+            } else {
                 console.log('dot.inf必须为数组类型')
             }
             return html;
         }
 
         // 边界监测
-        function borderCheck() {
+        function borderCheck(dot,objDiv) {
+            var infDiv = {
+                width: $('.mywp-modal2').width()/100,
+                height: $('.mywp-modal2').height()/100
+            };
+
+            if (+dot.x + infDiv.width >= Width - subWidth) {
+                dot.x -= infDiv.width;
+            }
+            if (+dot.y + infDiv.height >= Height - subHeight) {
+                dot.y -= infDiv.height;
+            }
+
+            var cssObj = {
+                left: dot.x + 'rem',
+                top: dot.y * .89 + 'rem',
+                display: 'block'
+            };
+
+            objDiv.css(cssObj);
         };
     }
 

@@ -9,22 +9,24 @@
         mywp.fullScreen();
 
         /*子菜单收缩呈现*/
-        function subToggleShow() {
-            var show = true;
+        var show = {s:true};
+        function subToggleShow(show) {
             return function () {
-                if (show) {
+                console.log(show)
+                if (show.s) {
                     $('.sub-nav').animate({marginLeft: 0}, 1000);
-                    $('.tmp2').animate({width: '0'}, 1000);
-                    $('.myinf').animate({left: '-2.74rem'}, 1000);
+                    $('.myinf').animate({left: '-3.5rem'}, 1000);
+                    $('.tmp2').animate({width: '0'}, 1100);
                 } else {
-                    $('.sub-nav').animate({marginLeft: '-2.74rem'}, 1000);
-                    $('.myinf').animate({left: '0.6rem'}, 1000);
-                    $('.tmp2').animate({width: '2.74rem'}, 1000);
+                    $('.sub-nav').animate({marginLeft: '-3.5rem'}, 1000);
+                    $('.myinf').animate({left: '0'}, 1000);
+                    $('.tmp2').animate({width: '4.3rem'}, 1000);
                 }
-                show = !show;
+                show.s = !show.s;
             }
         }
-        $('#subToggle').on('click', subToggleShow());
+        $('#subToggle').on('click', subToggleShow(show));
+        $('#subToggle2').on('click', subToggleShow(show));
 
         /*信息点生成*/
         var dots = [

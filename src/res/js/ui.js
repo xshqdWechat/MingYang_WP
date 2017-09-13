@@ -18,11 +18,10 @@ $(function () {
             $(self).siblings('em').text($(this).text()).siblings('ul').hide();
         })
     })
-    //日期时间
+    //日期时间 https://chmln.github.io/flatpickr/formatting/
     $('#myId').flatpickr({
+        locale:'zh',
         enableTime: true,
-        dateFormat: "H:i",
-        locale:'zh'
-        // defaultDate: "3:30"
+        dateFormat: "Y-m-d H:i"
     })
 })

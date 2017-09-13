@@ -12,15 +12,12 @@
         var show = {s:true};
         function subToggleShow(show) {
             return function () {
-                console.log(show)
                 if (show.s) {
-                    $('.sub-nav').animate({marginLeft: 0}, 1000);
+                    $('.sub-nav').animate({left: '0'}, 1000);
                     $('.myinf').animate({left: '-3.5rem'}, 1000);
-                    $('.tmp2').animate({width: '0'}, 1100);
                 } else {
-                    $('.sub-nav').animate({marginLeft: '-3.5rem'}, 1000);
+                    $('.sub-nav').animate({left: '-3.5rem'}, 1000);
                     $('.myinf').animate({left: '0'}, 1000);
-                    $('.tmp2').animate({width: '4.3rem'}, 1000);
                 }
                 show.s = !show.s;
             }

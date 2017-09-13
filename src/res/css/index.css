@@ -642,7 +642,8 @@ input[type="radio"] {
     height: 7.82rem;
     margin-top: 0.8rem;
     margin-right: 0.8rem;
-    position: relative;
+    position: absolute;
+    left: 0;
     padding: 0 0.15rem;
     display: flex;
     align-content: center;
@@ -722,7 +723,7 @@ input[type="radio"] {
       background-repeat: no-repeat; }
   .mywp-main .myinf {
     color: #ffffff;
-    font-size: 18px;
+    font-size: .18rem;
     background-image: url("../images/subbg.png");
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -737,7 +738,7 @@ input[type="radio"] {
     .mywp-main .myinf ul {
       margin-top: 0.16rem; }
     .mywp-main .myinf li {
-      font-size: 18px;
+      font-size: 0.18rem;
       background-image: url("../images/liicon.png");
       -webkit-background-size: 100% 100%;
       background-size: 100% 100%;
@@ -746,21 +747,21 @@ input[type="radio"] {
       background-repeat: no-repeat;
       background-size: auto auto;
       padding-left: 0.2rem;
-      line-height: 32px;
+      line-height: .32rem;
       margin-bottom: 0.08rem; }
       .mywp-main .myinf li span {
         color: #01bdf3; }
       .mywp-main .myinf li em {
         display: block;
-        font-size: 26px;
+        font-size: .26rem;
         font-style: normal;
         color: #00c6ff;
         font-weight: normal;
         -webkit-font-smoothing: antialiased; }
         .mywp-main .myinf li em span {
-          font-size: 18px; }
+          font-size: .18rem; }
     .mywp-main .myinf h5 {
-      font-size: 28px;
+      font-size: .28rem;
       text-align: center;
       line-height: 1.11rem;
       font-weight: normal;
@@ -793,6 +794,7 @@ input[type="radio"] {
     flex: 1;
     margin-top: 0.56rem;
     margin-right: 0.7rem;
+    margin-left: 3.5rem;
     background-image: url("../images/containerbg.png");
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -854,7 +856,10 @@ input[type="radio"] {
       background-color: #45fff9; }
   .mywp-main .tmcfbox {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    margin-left: 3.5rem; }
+    .mywp-main .tmcfbox .container {
+      margin-left: 0; }
     .mywp-main .tmcfbox .tmcf {
       position: absolute;
       top: 50%;
@@ -862,5 +867,3 @@ input[type="radio"] {
       transform: translate(-50%, -50%);
       z-index: -2;
       opacity: .2; }
-
-/*# sourceMappingURL=index.css.map */

@@ -1,5 +1,5 @@
-@import "./common.scss";
-@import "./icon.scss";
+@import "./common/common.scss";
+@import "./common/icon.scss";
 
 #{$id}wrap {
   width: 100%;
@@ -233,7 +233,8 @@
     height: p2r(782);
     margin-top: p2r(80);
     margin-right: p2r(80);
-    position: relative;
+    position: absolute;
+    left:0;
     padding:0 p2r(15);
     display: flex;
     align-content: center;
@@ -323,7 +324,7 @@
   }
   .myinf{
     color: #ffffff;
-    font-size: 18px;
+    font-size: .18rem;
     @include bgs($url+'subbg.png');
     width: p2r(274);
     height: p2r(782);
@@ -336,31 +337,31 @@
       margin-top:p2r(16);
     }
     li{
-      font-size: 18px;
+      font-size: 0.18rem;
       @include bgs($url+'liicon.png');
       background-position: left p2r(12);
       background-repeat:no-repeat;
       background-size: auto auto;
       padding-left: p2r(20);
-      line-height:32px;
+      line-height:.32rem;
       margin-bottom:p2r(8);
       span{
         color: #01bdf3;
       }
       em{
         display: block;
-        font-size: 26px;
+        font-size: .26rem;
         font-style: normal;
         color: #00c6ff;
         font-weight: normal;
         -webkit-font-smoothing:antialiased;
         span{
-          font-size: 18px;
+          font-size: .18rem;
         }
       }
     }
     h5{
-      font-size: 28px;
+      font-size: .28rem;
       text-align: center;
       line-height:p2r(111);
       font-weight:normal;
@@ -392,8 +393,8 @@
     flex: 1;
     margin-top: p2r(56);
     margin-right: p2r(70);
+    margin-left:p2r(350);
     @include bgs($url+'containerbg.png');
-    //width:p2r(1492);
     height: p2r(841);
   }
   .mywp-cf {
@@ -460,6 +461,10 @@
   .tmcfbox {
     position: relative;
     width: 100%;
+    margin-left: p2r(350);
+    .container{
+      margin-left: 0;
+    }
     .tmcf {
       position: absolute;
       top: 50%;

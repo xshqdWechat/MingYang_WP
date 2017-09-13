@@ -14,8 +14,10 @@
             return function () {
                 if (show) {
                     $('.sub-nav').animate({marginLeft: '-2.74rem'}, 1000);
+                    $('.container').animate({marginLeft: '0.8rem'}, 1000);
                 } else {
                     $('.sub-nav').animate({marginLeft: 0}, 1000);
+                    $('.container').animate({marginLeft: '3.5rem'}, 1000);
                 }
                 show = !show;
             }

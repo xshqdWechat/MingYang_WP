@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>报表管理</title>
+    <link rel="stylesheet" href="../res/js/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="../res/css/index.css">
+    <link rel="stylesheet" href="../res/css/reportManager.css">
+    <link rel="stylesheet" href="../res/css/syntheyAnalysis.css">
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../res/js/d3.v3.min.js"></script>
+    <script src="../res/js/echarts.js"></script>
+    <script src="../res/js/flatpickr/flatpickr.min.js"></script>
+    <script src="../res/js/flatpickr/zh.js"></script>
+    <script src="../res/js/common.js"></script>
+    <script src="../res/js/syntheyAnalysis.js"></script>
+    <script src="../res/js/ui.js"></script>
+</head>
+<body>
+<div class="mywp-wrap">
+    <div class="mywp-header clearfix">
+        <div class="mywp-logo"><h1><a href="">明阳风电 MINGYANG WIND POWER</a></h1></div>
+        <div class="site-menu">
+            <div class="nav">
+                <div class="overTop"></div>
+                <div class="overBottom"></div>
+                <a href="./index.html">首页</a>
+                <a href="./realTimeMonitoring.html">实时监测</a>
+                <a href="#" class="active">综合分析</a>
+                <a href="#">报表管理</a>
+                <a href="#">故障告警</a>
+                <a href="#">系统配置</a>
+            </div>
+            <div class="action">
+                <a href="#"><span class="mywp-icon icon-admin"></span>您好，管理员</a>
+            </div>
+            <div class="exitSystem"><a href="#"><span class="mywp-icon icon-exit"></span></a></div>
+        </div>
+    </div>
+    <div class="mywp-main clearfix">
+        <div class="sub-nav">
+            <a href="#" class="active"><span class="mywp-icon icon-ssgl"></span>负荷变化</a>
+            <a href="#"><span class="mywp-icon icon-ycgl"></span>测点对比</a>
+            <a href="#"><span class="mywp-icon icon-ljnh"></span>电量分析</a>
+            <span class="sub-nav-toggle" id="subToggle"></span>
+        </div>
+        <div class="tmcfbox">
+            <div class="container">
+                <div class="wrap">
+                    <div class="flex-box">
+                        <div class="text1">
+                            控制参数：
+                            <ul>
+                                <li><input type="radio" id="1" checked="checked" name="dian" value="1">
+                                    <label name="a" class="radioUi" for="1"><span></span>谐波崎变率</label></li>
+                                <li>
+                                    <input type="radio" id="2" checked="checked" name="dian" value="2">
+                                    <label name="a" class="radioUi radioChecked" for="2"><span></span>频率偏差</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="3" checked="checked" name="dian" value="2">
+                                    <label name="a" class="radioUi" for="2"><span></span>三相不平衡度</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text2">
+                            工厂：
+                            <div class="selectUi">
+                                <em>明阳智慧能源集团</em> <span></span>
+                                <ul>
+                                    <li>明阳智慧能源集团</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="text3">
+                            计量仪表：
+                            <div class="selectUi">
+                                <em>明阳智慧能源集团</em> <span></span>
+                                <ul>
+                                    <li>明阳智慧能源集团</li>
+                                    <li>2P1冲洗站</li>
+                                    <li>2P2至SCD发电机</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P1冲洗站</li>
+                                    <li>2P2至SCD发电机</li>
+                                    <li>2P3至变频器</li>
+                                    <li>2P3至变频器123</li>
+                                    <li>2P3至变频123器123</li>
+                                    <li>2P3至变频123器123</li>
+                                    <li>2P3至变频123器123</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="text4">
+                            查询时间： <input type="text" id="myId" class="dateUi">
+                        </div>
+
+                    </div>
+                    <div class="visual-data-box">
+                        <div class="title"></div>
+                        <div class="content">
+                            <div class="data">
+                                <div id="main" style="width: 600px;height:400px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tmcf">
+                <img src="../res/images/cfxt.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

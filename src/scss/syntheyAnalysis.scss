@@ -1,0 +1,21 @@
+.visual-data-box{
+  .title{
+    border: 1px solid #337ab7;
+    border-radius: 8px 8px 0 0;
+    height: .3rem;
+    width: 100%;
+    background-color: #337ab7;
+  }
+  .content{
+    border: 1px solid #337ab7;
+    padding: .15rem;
+    border-top: none;
+    border-radius:0 0  8px 8px ;
+    .data{
+      background-color: #333333;
+      &>div#main{
+        margin: 0 auto;
+      }
+    }
+  }
+}

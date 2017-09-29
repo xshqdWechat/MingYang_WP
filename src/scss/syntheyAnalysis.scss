@@ -1,4 +1,5 @@
 .visual-data-box{
+  margin-top:.16rem;
   .title{
     border: 1px solid #337ab7;
     border-radius: 8px 8px 0 0;
@@ -16,6 +17,26 @@
       &>div#main{
         margin: 0 auto;
       }
+    }
+    .table{
+      table{
+        border-right:1px solid #6699aa;
+        border-bottom:1px solid #6699aa;
+        td,th{
+          border-left:1px solid #6699aa;
+          border-top:1px solid #6699aa;
+          background-color: #012946;
+          text-align: center;
+          color: #ffffff;
+          //height: 50px;
+          height:.28rem;
+        }
+        th{
+          font-weight: normal;
+          background-color: #105485;
+        }
+      }
+      background-color: transparent;
     }
   }
 }

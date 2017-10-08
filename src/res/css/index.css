@@ -259,6 +259,15 @@ input[type="radio"] {
       height: .18rem;
       background: url("../images/icon/arrowDown.png") center center no-repeat, -webkit-linear-gradient(bottom, #0e4675 0%, #0887ba 100%); }
 
+.full-screen {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll; }
+
+.full-screen::-webkit-scrollbar {
+  width: 16px;
+  background-color: #000; }
+
 .dateUi {
   height: 0.28rem;
   width: 1.84rem;

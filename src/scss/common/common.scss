@@ -321,6 +321,17 @@ input[type="radio"] {
   }
 }
 
+.full-screen{
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.full-screen::-webkit-scrollbar{
+    width: 16px;
+  background-color: transparent;
+}
+
 .dateUi{
   height:p2r(28);
   width:p2r(184);

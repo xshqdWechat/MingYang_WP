@@ -15,6 +15,34 @@
     <script src="../res/js/common.js"></script>
     <script src="../res/js/syntheyAnalysis.js"></script>
     <script src="../res/js/ui.js"></script>
+    <style>
+        .tab {
+        }
+
+        .tab ul {
+            display: flex;
+        }
+
+        .tab li {
+            padding: .12rem;
+            background-color: #337ab7;
+            color: #ffffff;
+            cursor: pointer;
+            min-width: .68rem;
+            text-align: center;
+        }
+        .tab li:hover,.tab li.active{
+            background-color: #154fb7;
+        }
+        
+        .tab li:first-child{
+            border-radius: 6px 0 0 6px;
+        }
+        .tab li:last-child{
+            border-radius: 0 6px 6px 0;
+        }
+
+    </style>
 </head>
 <body>
 <div class="mywp-wrap">
@@ -76,9 +104,9 @@
                         <div class="text3">
                             计量仪表：
                             <div class="selectUi">
-                                <em>明阳智慧能源集团</em> <span></span>
+                                <em>明阳智慧能</em> <span></span>
                                 <ul>
-                                    <li>明阳智慧能源集团</li>
+                                    <li>明阳智慧能源</li>
                                     <li>2P1冲洗站</li>
                                     <li>2P2至SCD发电机</li>
                                     <li>2P3至变频器</li>
@@ -98,6 +126,16 @@
                             查询时间： <input type="text" id="myId" class="dateUi">
                         </div>
 
+                    </div>
+                    <div style="display: block">
+                        <div class="tab">
+                            <ul>
+                                <li class="active">用电</li>
+                                <li>有公共率</li>
+                                <li>无功功率</li>
+                            </ul>
+                            <div></div>
+                        </div>
                     </div>
                     <div class="visual-data-box">
                         <div class="title"></div>
@@ -119,7 +157,7 @@
                         <div class="title"></div>
                         <div class="content">
                             <div class="data table">
-                                <table  border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
                                     <tr>
                                         <th>123</th>
                                         <th>123</th>
@@ -128,11 +166,11 @@
                                         <th>123</th>
                                     </tr>
                                     <tr>
-                                    <td>23</td>
-                                    <td>23</td>
-                                    <td>23</td>
-                                    <td>23</td>
-                                    <td>23</td>
+                                        <td>23</td>
+                                        <td>23</td>
+                                        <td>23</td>
+                                        <td>23</td>
+                                        <td>23</td>
                                     </tr>
                                 </table>
                             </div>
